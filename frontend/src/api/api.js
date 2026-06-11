@@ -65,7 +65,14 @@ async function request(method, path, body, requiresAuth = true) {
     ...(body !== undefined ? { body: JSON.stringify(body) } : {}),
   });
 
-  const data = await res.json();
+  let data = {};
+  const text = await res.text();
+  try {
+    data = text ? JSON.parse(text) : {};
+  } catch {
+    throw new Error(res.ok ? 'Invalid server response' : 'Server unreachable — is the backend running?');
+  }
+
   if (!res.ok) throw new Error(data.error || 'Request failed');
   return data;
 }
