@@ -255,11 +255,11 @@ export default function Login() {
       </nav>
 
       {/* ── Hero ── */}
-      <section className="relative pt-28 pb-20 px-6 sm:px-10 md:px-16 lg:px-20 max-w-7xl mx-auto" style={{ zIndex: 1 }}>
+      <section className="relative pt-40 pb-20 px-6 sm:px-10 md:px-16 lg:px-20 max-w-7xl mx-auto" style={{ zIndex: 1 }}>
         <div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-14">
           <div className="flex-1 min-w-0">
             <div className="inline-flex items-center px-4 py-2 rounded mb-8 text-[13px] font-mono font-semibold"
-              style={{ background: 'transparent', border: '1.5px solid rgba(140,110,60,0.40)', color: '#7a6245' }}>
+              style={{ background: 'transparent', border: '1.5px solid rgba(217,119,6,0.55)', color: '#d97706' }}>
               $ v2.4.0_STABLE
             </div>
             <h1 className="font-black tracking-tight leading-[1.0] mb-6"
@@ -271,17 +271,17 @@ export default function Login() {
               Bridge the gap between generic scripting and production-grade
               Physical Design flows.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3">
+            <div className="flex flex-col items-start gap-3 max-w-[340px]">
               <button onClick={() => navigate('/auth?tab=signup')}
-                className="inline-flex items-center justify-center gap-2 font-black font-mono transition-all duration-200 px-7 py-[14px] rounded-xl text-[15px]"
-                style={{ background: 'linear-gradient(135deg,#f59e0b,#f97316)', color: '#0d0c0a', boxShadow: '0 6px 20px rgba(245,158,11,0.38)' }}
+                className="w-full inline-flex items-center justify-center gap-2 font-black font-mono transition-all duration-200 px-7 py-[14px] rounded-xl text-[15px]"
+                style={{ background: 'linear-gradient(135deg,#f59e0b,#f97316)', color: '#0d0c0a', boxShadow: 'none' }}
                 onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-2px)'}
                 onMouseLeave={e => e.currentTarget.style.transform = 'translateY(0)'}>
                 &gt;_ START_LEARNING →
               </button>
               <button onClick={() => navigate('/auth?tab=login')}
-                className="inline-flex items-center justify-center font-bold font-mono tracking-widest uppercase transition-all duration-200 px-7 py-[14px] rounded-xl text-[13px]"
-                style={{ background: 'rgba(255,255,255,0.65)', border: '1.5px solid rgba(140,110,60,0.28)', color: '#6b5a45' }}
+                className="inline-flex items-center justify-center font-bold font-mono tracking-widest uppercase transition-all duration-200 px-5 py-[10px] rounded-xl text-[12px]"
+                style={{ background: 'transparent', border: '1.5px solid rgba(140,110,60,0.28)', color: '#6b5a45' }}
                 onMouseEnter={e => { e.currentTarget.style.borderColor = 'rgba(217,119,6,0.45)'; e.currentTarget.style.color = '#d97706'; }}
                 onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(140,110,60,0.28)'; e.currentTarget.style.color = '#6b5a45'; }}>
                 EXPLORE_DOCS →
@@ -300,7 +300,7 @@ export default function Login() {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
           {STATS.map(({ v, l, sub, icon }) => (
             <div key={l} className="relative overflow-hidden rounded-2xl p-7"
-              style={{ background: 'linear-gradient(135deg, #f59e0b 0%, #f97316 100%)', boxShadow: '0 8px 28px rgba(245,158,11,0.30)' }}>
+              style={{ background: 'linear-gradient(135deg, #f6a823 0%, #f47820 100%)', boxShadow: 'none' }}>
               {/* Grid overlay */}
               <div className="absolute inset-0 pointer-events-none" style={{
                 backgroundImage: 'repeating-linear-gradient(0deg, rgba(0,0,0,0.07) 0px, rgba(0,0,0,0.07) 1px, transparent 1px, transparent 26px), repeating-linear-gradient(90deg, rgba(0,0,0,0.07) 0px, rgba(0,0,0,0.07) 1px, transparent 1px, transparent 26px)',
@@ -354,7 +354,7 @@ export default function Login() {
       {/* ── CTA ── */}
       <section className="relative py-10 px-6 sm:px-8" style={{ zIndex: 1 }}>
         <div className="rounded-3xl relative overflow-hidden"
-          style={{ background: 'linear-gradient(135deg, #f59e0b 0%, #f97316 100%)', boxShadow: '0 12px 40px rgba(245,158,11,0.30)', padding: '52px 56px' }}>
+          style={{ background: 'linear-gradient(135deg, #f6a823 0%, #f47820 100%)', boxShadow: 'none', padding: '72px 56px' }}>
           {/* Grid overlay */}
           <div className="absolute inset-0 pointer-events-none" style={{
             backgroundImage: 'repeating-linear-gradient(0deg, rgba(0,0,0,0.07) 0px, rgba(0,0,0,0.07) 1px, transparent 1px, transparent 26px), repeating-linear-gradient(90deg, rgba(0,0,0,0.07) 0px, rgba(0,0,0,0.07) 1px, transparent 1px, transparent 26px)',
