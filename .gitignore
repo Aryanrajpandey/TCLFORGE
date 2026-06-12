@@ -9,3 +9,4 @@ db.sqlite3
 .claude
 *.logbackend/.env.example
 templates/index.html
+loginlogout/templates/index.html
