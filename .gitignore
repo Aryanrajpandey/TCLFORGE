@@ -7,4 +7,5 @@ __pycache__/
 *.pyc
 db.sqlite3
 .claude
-*.log
+*.logbackend/.env.example
+templates/index.html
