@@ -191,9 +191,8 @@ export default function Home() {
                 External Docs
               </p>
               {[
-                { label: 'TCL Reference', href: 'https://www.tcl.tk/doc/' },
-                { label: 'Genus Docs',    href: '#' },
-                { label: 'Innovus Docs',  href: '#' },
+                { label: 'TCL Mannual', href: 'https://www.tcl.tk/doc/' },
+               
               ].map(r => (
                 <a key={r.label} href={r.href} target="_blank" rel="noopener noreferrer"
                   className="flex items-center justify-between px-3 py-2 rounded-lg text-[13px] text-cc-muted hover:text-amber-500 hover:bg-amber-500/5 transition-colors">

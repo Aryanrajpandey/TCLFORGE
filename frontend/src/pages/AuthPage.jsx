@@ -126,7 +126,7 @@ export default function AuthPage() {
   }
 
   const inputCls = `w-full px-4 py-3.5 rounded-lg text-[14px] transition-all outline-none
-    bg-[#161b22] border border-[#2d3440] text-cc-text placeholder-cc-faint
+    bg-[#161b22] border border-[#2d3440] text-white placeholder-cc-faint
     focus:border-amber-500/60 focus:ring-1 focus:ring-amber-500/15`;
 
   return (
